@@ -2,3 +2,16 @@
 mail:
   host: smtp.gmail.com
   port: 587
+  user:
+    name: ${MAIL_USER_NAME}
+    password: ${MAIL_USER_PASSWORD}
+amqp:
+  host: localhost
+  port: 5672
+  user:
+    name: ${AMQP_USER_NAME}
+    password: ${AMQP_USER_PASSWORD}
+  exchange: go.exchange
+  queue: go.queue
+  consumer: go.consumer
+
